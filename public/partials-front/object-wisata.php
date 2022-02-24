@@ -124,6 +124,6 @@
     </div>
 
     <p class="text-center">
-        <a href="#">See All Foods</a>
+        <a href="#">See All Objects</a>
     </p>
 </section>
