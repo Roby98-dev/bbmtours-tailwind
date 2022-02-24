@@ -8,37 +8,36 @@
         </div>
     </div>
 
-    <div class="wrapper">
-        <a href="<?= SITEURL; ?>admin/add-blog.php" class="bg-blue-500 rounded-full px-4 py-2 text-gray-100">Add Blog</a>
+    <a href="<?= SITEURL; ?>admin/add-blog.php" class="bg-blue-500 rounded px-4 py-2 text-gray-100">Add Blog</a>
 
-        <?php
-        if (isset($_SESSION['add'])) {
-            echo $_SESSION['add'];
-            unset($_SESSION['add']);
-        }
+    <?php
+    if (isset($_SESSION['add'])) {
+        echo $_SESSION['add'];
+        unset($_SESSION['add']);
+    }
 
-        if (isset($_SESSION['delete'])) {
-            echo $_SESSION['delete'];
-            unset($_SESSION['delete']);
-        }
+    if (isset($_SESSION['delete'])) {
+        echo $_SESSION['delete'];
+        unset($_SESSION['delete']);
+    }
 
-        if (isset($_SESSION['upload'])) {
-            echo $_SESSION['upload'];
-            unset($_SESSION['upload']);
-        }
+    if (isset($_SESSION['upload'])) {
+        echo $_SESSION['upload'];
+        unset($_SESSION['upload']);
+    }
 
-        if (isset($_SESSION['unauthorize'])) {
-            echo $_SESSION['unauthorize'];
-            unset($_SESSION['unauthorize']);
-        }
+    if (isset($_SESSION['unauthorize'])) {
+        echo $_SESSION['unauthorize'];
+        unset($_SESSION['unauthorize']);
+    }
 
-        if (isset($_SESSION['update'])) {
-            echo $_SESSION['update'];
-            unset($_SESSION['update']);
-        }
+    if (isset($_SESSION['update'])) {
+        echo $_SESSION['update'];
+        unset($_SESSION['update']);
+    }
 
-        ?>
-
+    ?>
+    <div class="py-5 overflow-x-scroll">
         <table id="blog_data" class="tbl-full">
             <thead>
                 <tr>

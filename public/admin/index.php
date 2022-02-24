@@ -1,6 +1,6 @@
 <?php include('partials/menu.php'); ?>
 
-<div class="bg-gray-200 md:ml-16 lg:ml-60 px-2 py-10">
+<div class="md:ml-16 lg:ml-60 px-2 py-10">
     <div class="py-5">
         <h1 class="text-center text-green-500 font-semibold text-2xl uppercase">Welcome <?= $_SESSION['user']; ?>!</h1>
         <div class="flex justify-center">
@@ -25,7 +25,7 @@
     <div class="flex justify-center">
         <div class="grid grid-cols-1 md:grid-cols-3 max-w-6xl mx-auto w-full">
             <div class="flex justify-center">
-                <div class="bg-gray-200 mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500 mx-auto">
+                <div class="mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500 mx-auto">
                     <?php
                     $sql = "SELECT * FROM tbl_category";
                     $res = mysqli_query($conn, $sql);
@@ -39,7 +39,7 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="bg-gray-200 mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
+                <div class="mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
                     <?php
                     $sql5 = "SELECT * FROM tbl_blog";
                     $res5 = mysqli_query($conn, $sql5);
@@ -54,7 +54,7 @@
 
 
             <div class="flex justify-center">
-                <div class="bg-gray-200 mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
+                <div class="mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
                     <?php
                     $sql2 = "SELECT * FROM tbl_food";
                     $res2 = mysqli_query($conn, $sql2);
@@ -69,7 +69,7 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="bg-gray-200 mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
+                <div class="mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
                     <?php
                     $sql3 = "SELECT * FROM tbl_order";
                     $res3 = mysqli_query($conn, $sql3);
@@ -84,7 +84,7 @@
             </div>
 
             <div class="flex justify-center">
-                <div class="bg-gray-200 mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
+                <div class="mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
                     <?php
                     $sql6 = "SELECT * FROM tbl_admin";
                     $res6 = mysqli_query($conn, $sql6);
@@ -99,7 +99,7 @@
 
             <div class="flex justify-center">
                 <?php if ($_SESSION['user_grade'] == 1) { ?>
-                    <div class="bg-gray-200 mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
+                    <div class="mx-auto mb-2 text-center h-20 w-60 hover:bg-green-200 transition duration-300 rounded-xl flex justify-center border border-indigo-500 hover:border-red-500">
 
                         <?php
                         $sql4 = "SELECT SUM(total) AS Total FROM tbl_order WHERE status='Delivered'";

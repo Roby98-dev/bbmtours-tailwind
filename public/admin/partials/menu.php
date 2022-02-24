@@ -15,7 +15,9 @@ include_once('login-check.php');
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/css/styles.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/vendor/boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="<?= SITEURL; ?>assets/vendor/dataTable/jquery.dataTables.min.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/vendor/dataTable/datatables.min.css">
+    <link rel="stylesheet" href="<?= SITEURL; ?>assets/css/dataTailwind.css">
 </head>
 
 <body>
@@ -45,17 +47,17 @@ include_once('login-check.php');
         <div class="absolute h-full w-5 right-0 bg-gradient-to-l from-gray-100"></div>
         <div class="absolute h-full w-5 left-0 bg-gradient-to-r from-gray-100"></div>
         <div class="flex overflow-scroll whitespace-nowrap py-3 px-4 items-center">
-            <a href="index.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Dashboard</a>
+            <a href="index.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Dashboard</a>
             <?php if ($_SESSION['user_grade'] == 1) { ?>
-                <a href="manage-admin.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">User</a>
+                <a href="manage-admin.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">User</a>
             <?php } ?>
-            <a href="manage-category.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Category</a>
-            <a href="manage-food.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Food</a>
+            <a href="manage-category.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Category</a>
+            <a href="manage-food.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Itinarary</a>
             <?php if ($_SESSION['user_grade'] == 1) { ?>
-                <a href="manage-order.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Order</a>
+                <a href="manage-order.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Order</a>
             <?php } ?>
-            <a href="manage-blog.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Blog</a>
-            <a href="logout.php" class="bg-indigo-100 text-blue-800 border border-indigo-800 rounded-full px-3 mx-1 py-1">Logout</a>
+            <a href="manage-blog.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Blog</a>
+            <a href="logout.php" class="bg-indigo-100 text-blue-800 border rounded px-3 mx-1">Logout</a>
         </div>
     </div>
 
@@ -101,7 +103,7 @@ include_once('login-check.php');
                     <div class="my-2 hover:bg-indigo-500 md:flex justify-center lg:justify-start cursor-pointer rounded mx-2 hover:text-gray-100">
                         <div class="flex items-center px-1">
                             <i class="bx bx-home px-1 md:text-2xl lg:text-lg"></i>
-                            <p class="md:hidden lg:block lg:text-lg">Food</p>
+                            <p class="md:hidden lg:block lg:text-lg">Itinarary</p>
                         </div>
                     </div>
                 </a>

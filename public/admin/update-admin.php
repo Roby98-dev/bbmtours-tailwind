@@ -111,7 +111,34 @@
                         <input type="hidden" name="current_background" value="<?= $current_background; ?>">
                         <input type="submit" name="submit" value="Save" class="rounded-full bg-green-500 mx-1 px-2 cursor-pointer py-0">
                         <a href="<?= SITEURL; ?>admin/update-password.php?id=<?= $id; ?>" class="rounded-full bg-blue-500 mx-1 px-2 cursor-pointer py-0">Edit Password</a>
-                        <a href="<?= SITEURL; ?>admin/delete-admin.php?id=<?= $id; ?>" class="rounded-full bg-red-500 mx-1 px-2 cursor-pointer py-0">Delete</a>
+                        <a href="<?= SITEURL; ?>admin/delete-admin.php?id=<?= $id; ?>" class="rounded bg-red-500 mx-1 px-2 cursor-pointer py-1">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <style>
+                                        .cls-1 {
+                                            fill: #0e7cc9;
+                                        }
+
+                                        .cls-2 {
+                                            fill: #47a6e3;
+                                        }
+
+                                        .cls-3 {
+                                            fill: #6c2e7c;
+                                        }
+                                    </style>
+                                </defs>
+                                <g id="Icons">
+                                    <path class="cls-1" d="M20,5V20a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V5Z" />
+                                    <path class="cls-2" d="M20,5V15a3,3,0,0,1-3,3H7a3,3,0,0,1-3-3V5Z" />
+                                </g>
+                                <g data-name="Layer 4" id="Layer_4">
+                                    <path class="cls-3" d="M13,0H11A3,3,0,0,0,8,3V4H2A1,1,0,0,0,2,6H3V20a4,4,0,0,0,4,4H17a4,4,0,0,0,4-4V6h1a1,1,0,0,0,0-2H16V3A3,3,0,0,0,13,0ZM10,3a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V4H10Zm9,17a2,2,0,0,1-2,2H7a2,2,0,0,1-2-2V6H19Z" />
+                                    <path class="cls-3" d="M12,9a1,1,0,0,0-1,1v8a1,1,0,0,0,2,0V10A1,1,0,0,0,12,9Z" />
+                                    <path class="cls-3" d="M15,18a1,1,0,0,0,2,0V10a1,1,0,0,0-2,0Z" />
+                                    <path class="cls-3" d="M8,9a1,1,0,0,0-1,1v8a1,1,0,0,0,2,0V10A1,1,0,0,0,8,9Z" />
+                                </g>
+                            </svg></a>
                     </div>
                 </div>
             </form>
@@ -214,10 +241,18 @@ if (isset($_POST['submit'])) {
 
     if ($res == true) {
         $_SESSION['update'] = "<div class='success'>Admin Updated Successfully.</div>";
-        header('location:' . SITEURL . 'admin/manage-admin.php');
+?>
+        <script>
+            window.location = "manage-admin.php";
+        </script>
+    <?php
     } else {
         $_SESSION['update'] = "<div class='error'>Failed to edit Admin.</div>";
-        header('location:' . SITEURL . 'admin/manage-admin.php');
+    ?>
+        <script>
+            window.location = "manage-admin.php";
+        </script>
+<?php
     }
 }
 ?>

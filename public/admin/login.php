@@ -13,7 +13,7 @@
 
 <body>
     <section class="px-2">
-        <div class="mt-16 border border-indigo-500 rounded-md py-2">
+        <div class="mt-16 border border-indigo-500 rounded-md py-2 md:max-w-2xl mx-auto">
             <div class="py-5">
                 <h1 class="text-center text-green-500 font-semibold text-4xl uppercase">Login</h1>
                 <div class="flex justify-center">
@@ -45,10 +45,10 @@
                         <input type="password" name="password" placeholder="Enter Password" class="rouded-full bg-gray-200 p-2">
                     </div>
 
-                    <input type="submit" name="submit" value="Login" class="btn-primary rounded-full px-2 my-5">
+                    <input type="submit" name="submit" value="Login" class="btn-primary rounded px-5 my-5">
                 </form>
 
-                <p class="text-center"><a href="<?= SITEURL; ?>homepage.php">Poinsla</a></p>
+                <p class="text-center text-indigo-500"><a href="<?= SITEURL; ?>homepage.php">Back to home page</a></p>
             </div>
         </div>
     </section>
@@ -75,16 +75,24 @@ if (isset($_POST['submit'])) {
     $count = mysqli_num_rows($res);
 
     if ($count == 1) {
-        $_SESSION['login'] = "<div class='success'>Your success login</div>";
+        $_SESSION['login'] = "<div class='success'>Your login success!</div>";
         $_SESSION['user'] = $username;
         $_SESSION['image'] = $image_name;
         $_SESSION['user_id'] = $user_id;
         $_SESSION['user_grade'] = $user_grade;
 
-        header('location:' . SITEURL . 'admin/');
+?>
+        <script>
+            window.location = "index.php";
+        </script>
+    <?php
     } else {
         $_SESSION['login'] = "<div class='error text-center'>Username or Password did not match.</div>";
-        header('location:' . SITEURL . 'admin/login.php');
+    ?>
+        <script>
+            window.location = "login.php";
+        </script>
+<?php
     }
 }
 ?>

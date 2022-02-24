@@ -1,120 +1,108 @@
 <?php include('partials/menu.php'); ?>
 
 <div class="bg-gray-200 md:ml-16 lg:ml-60 px-2 py-10">
-    <div class="wrapper">
-        <h1>Manage Food</h1>
 
-        <br /><br />
-
-        <!-- Button to Add Admin -->
-        <a href="<?php echo SITEURL; ?>admin/add-food.php" class="btn-primary">Add Food</a>
-
-        <br /><br /><br />
-
-        <?php
-        if (isset($_SESSION['add'])) {
-            echo $_SESSION['add'];
-            unset($_SESSION['add']);
-        }
-
-        if (isset($_SESSION['delete'])) {
-            echo $_SESSION['delete'];
-            unset($_SESSION['delete']);
-        }
-
-        if (isset($_SESSION['upload'])) {
-            echo $_SESSION['upload'];
-            unset($_SESSION['upload']);
-        }
-
-        if (isset($_SESSION['unauthorize'])) {
-            echo $_SESSION['unauthorize'];
-            unset($_SESSION['unauthorize']);
-        }
-
-        if (isset($_SESSION['update'])) {
-            echo $_SESSION['update'];
-            unset($_SESSION['update']);
-        }
-
-        ?>
-
-        <table class="tbl-full">
-            <tr>
-                <th>S.N.</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Image</th>
-                <th>Featured</th>
-                <th>Active</th>
-                <th>Actions</th>
-            </tr>
-
-            <?php
-            //Create a SQL Query to Get all the Food
-            $sql = "SELECT * FROM tbl_food";
-
-            //Execute the qUery
-            $res = mysqli_query($conn, $sql);
-
-            //Count Rows to check whether we have foods or not
-            $count = mysqli_num_rows($res);
-
-            //Create Serial Number VAriable and Set Default VAlue as 1
-            $sn = 1;
-
-            if ($count > 0) {
-                //We have food in Database
-                //Get the Foods from Database and Display
-                while ($row = mysqli_fetch_assoc($res)) {
-                    //get the values from individual columns
-                    $id = $row['id'];
-                    $title = $row['title'];
-                    $price = $row['price'];
-                    $image_name = $row['image_name'];
-                    $featured = $row['featured'];
-                    $active = $row['active'];
-            ?>
-
-                    <tr>
-                        <td><?php echo $sn++; ?>. </td>
-                        <td><?php echo $title; ?></td>
-                        <td>$<?php echo $price; ?></td>
-                        <td>
-                            <?php
-                            //CHeck whether we have image or not
-                            if ($image_name == "") {
-                                //WE do not have image, DIslpay Error Message
-                                echo "<div class='error'>Image not Added.</div>";
-                            } else {
-                                //WE Have Image, Display Image
-                            ?>
-                                <img src="<?php echo SITEURL; ?>images/food/<?php echo $image_name; ?>" width="100px">
-                            <?php
-                            }
-                            ?>
-                        </td>
-                        <td><?php echo $featured; ?></td>
-                        <td><?php echo $active; ?></td>
-                        <td>
-                            <a href="<?php echo SITEURL; ?>admin/update-food.php?id=<?php echo $id; ?>" class="btn-secondary">Update Food</a>
-                            <a href="<?php echo SITEURL; ?>admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Food</a>
-                        </td>
-                    </tr>
-
-            <?php
-                }
-            } else {
-                //Food not Added in Database
-                echo "<tr> <td colspan='7' class='error'> Food not Added Yet. </td> </tr>";
-            }
-
-            ?>
-
-
-        </table>
+    <div class="py-5">
+        <h1 class="text-center text-green-500 font-semibold text-4xl uppercase">Itinarary</h1>
+        <div class="flex justify-center">
+            <div class="h-1 w-24 mb-3 bg-green-500"></div>
+        </div>
     </div>
 
+    <?php
+    if (isset($_SESSION['add'])) {
+        echo $_SESSION['add'];
+        unset($_SESSION['add']);
+    }
+
+    if (isset($_SESSION['delete'])) {
+        echo $_SESSION['delete'];
+        unset($_SESSION['delete']);
+    }
+
+    if (isset($_SESSION['upload'])) {
+        echo $_SESSION['upload'];
+        unset($_SESSION['upload']);
+    }
+
+    if (isset($_SESSION['unauthorize'])) {
+        echo $_SESSION['unauthorize'];
+        unset($_SESSION['unauthorize']);
+    }
+
+    if (isset($_SESSION['update'])) {
+        echo $_SESSION['update'];
+        unset($_SESSION['update']);
+    }
+
+    ?>
+
+    <a href="<?php echo SITEURL; ?>admin/add-food.php" class="bg-blue-500 px-4 font-semibold rounded py-1 text-gray-200"><i class="bx bx-plus"></i>Itinarary</a>
+
+    <div class="py-5 overflow-x-scroll">
+        <table id="category-destination">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                    <th>Featured</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <?php
+                $sql = "SELECT * FROM tbl_food ORDER BY id DESC";
+                $res = mysqli_query($conn, $sql);
+                $count = mysqli_num_rows($res);
+
+                if ($count > 0) {
+                    while ($row = mysqli_fetch_assoc($res)) {
+                        $id = $row['id'];
+                        $title = $row['title'];
+                        $price = $row['price'];
+                        $image_name = $row['image_name'];
+                        $featured = $row['featured'];
+                        $active = $row['active'];
+                ?>
+                        <tr>
+                            <td><?= $title; ?></td>
+                            <td><?= $price; ?></td>
+                            <td>
+                                <?php
+                                if ($image_name != "") {
+                                ?>
+                                    <img src="<?= SITEURL; ?>images/food/<?= $image_name; ?>" class="h-20 w-60 bg-indigo-500 rounded-lg object-cover shadow-lg object-center" />
+                                <?php
+                                } else {
+                                    echo "<div class='error'>Image not Added.</div>";
+                                }
+                                ?>
+                            </td>
+                            <td><?= $featured; ?></td>
+                            <td><?= $active; ?></td>
+                            <td>
+                                <a href="<?= SITEURL; ?>admin/update-food.php?id=<?= $id; ?>" class="bg-green-500 py-1 px-4 rounded-full text-xl font-semibold text-gray-100">Edit</a>
+                                <a href="<?= SITEURL; ?>admin/delete-food.php.php?id=<?= $id; ?>&image_name=<?= $image_name; ?>" class="bg-red-500 py-1 px-4 rounded-full text-xl font-semibold text-gray-100">Delete</a>
+                            </td>
+                        </tr>
+                    <?php
+                    }
+                } else {
+                    ?>
+                    <tr>
+                        <td colspan="6">
+                            <div class="error">No Category Added.</div>
+                        </td>
+                    </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <?php include('partials/footer.php'); ?>
