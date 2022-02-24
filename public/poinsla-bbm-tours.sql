@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 05, 2021 at 09:00 PM
+-- Generation Time: Feb 24, 2022 at 04:45 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -44,8 +44,8 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`, `image_name`, `created_at`, `background_name`, `user_grade`) VALUES
 (12, 'Administrator', 'admin', '21232f297a57a5a743894a0e4a801fc3', 'default.jpg', '2021-04-05 19:46:40', 'New-Profile-background-6030.jpg', 1),
-(13, 'I Kadek Roby Adi Putra', 'roby', 'f99cc4e7daff1b96f7d221bd8d7aedef', 'New-Profile-1409.jpeg', '2021-04-05 19:46:40', 'New-Profile-background-1564.jpg', 1),
-(19, 'Eva Ardonis', 'ardonis', 'f99cc4e7daff1b96f7d221bd8d7aedef', 'Profile-User-7818.jpg', '2021-04-05 19:46:40', 'New-Profile-background-3301.jpg', 1),
+(13, 'I Kadek Roby Adi Putra', 'roby', 'f99cc4e7daff1b96f7d221bd8d7aedef', 'New-Profile-1409.jpeg', '2021-04-05 19:46:40', 'New-Profile-background-3044.jpg', 1),
+(19, 'Eva Ardonis', 'ardonis', 'f99cc4e7daff1b96f7d221bd8d7aedef', 'Profile-User-7818.jpg', '2021-04-05 19:46:40', 'New-Profile-background-7732.jpg', 1),
 (20, 'Marta Mulia', 'marta', 'f99cc4e7daff1b96f7d221bd8d7aedef', 'New-Profile-5188.jpg', '2021-04-05 20:02:03', 'New-Profile-background-3071.jpg', 2);
 
 -- --------------------------------------------------------
@@ -56,28 +56,15 @@ INSERT INTO `tbl_admin` (`id`, `full_name`, `username`, `password`, `image_name`
 
 CREATE TABLE `tbl_blog` (
   `id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
   `slug` varchar(255) NOT NULL,
   `excerpt` text NOT NULL,
   `body` text NOT NULL,
   `image_name` varchar(255) NOT NULL,
-  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
-  `author` varchar(255) NOT NULL,
-  `category_title` varchar(255) NOT NULL,
+  `created_at` date NOT NULL DEFAULT current_timestamp(),
   `active` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_blog`
---
-
-INSERT INTO `tbl_blog` (`id`, `slug`, `excerpt`, `body`, `image_name`, `created_at`, `author`, `category_title`, `active`) VALUES
-(1, 'First Post', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quam adipisci quis nostrum rem explicabo nulla quo harum! Quis, adipisci!', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus adipisci eveniet quo consequuntur impedit quam cumque itaque tenetur omnis voluptatem repellendus ab, rem sapiente asperiores quidem unde recusandae obcaecati reprehenderit odio aperiam quae exercitationem laboriosam! Aliquam quisquam quidem, reiciendis atque corrupti sint delectus asperiores sit ex, aliquid corporis placeat temporibus perspiciatis! Voluptate perferendis similique odio consectetur nesciunt modi quo nobis excepturi. Magnam, ab consequuntur eum cumque earum dignissimos, ipsum repellendus velit, eaque accusantium dicta a reprehenderit quasi at reiciendis sunt consectetur in deleniti inventore! Earum sapiente fugit itaque omnis aspernatur. Quo nostrum similique quae sunt dignissimos autem illum dolor doloremque quod sint eum consequuntur quia, dolorum non laborum fuga ratione facilis placeat voluptatum. Dolor corporis quo delectus, facere perferendis nostrum neque iusto voluptatum vero, officiis autem quasi perspiciatis eaque. Iste quasi velit ut est deleniti tempora, molestiae reprehenderit eius tenetur quibusdam deserunt magnam, unde fugit, temporibus molestias? Facilis ducimus magni laborum optio architecto non, earum vero. Doloremque aspernatur autem corrupti soluta, officiis quos sint ipsum aperiam alias blanditiis. Sequi inventore exercitationem autem recusandae necessitatibus consectetur magni nobis obcaecati reiciendis tempora sunt omnis, cupiditate sapiente harum quod quaerat vitae amet eligendi iste quidem rem debitis placeat provident aspernatur. Odio, tempora!', 'bg-image-5.jpg', '2021-04-05 16:48:20', 'Roby', 'Tech', 'Yes'),
-(3, 'Second-Post', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias nisi atque quidem iure! Omnis excepturi itaque esse odio magni!', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores est ipsa dolores assumenda, iste quis, voluptatibus itaque iusto soluta explicabo, nihil ullam animi omnis odio vel. Quidem odit, mollitia ipsam similique earum vel quibusdam voluptas nostrum eius. Ipsam sapiente vitae asperiores voluptatibus culpa, esse commodi dicta voluptas officia tenetur ea quam error quo minus? Sit laudantium perferendis modi repellat accusamus amet vero et ex quasi, dicta recusandae fuga dignissimos dolores laborum illum ullam eligendi, ad veritatis neque. Saepe eum quod, eius non blanditiis nisi! Velit natus pariatur sequi alias. Quam repellat facilis doloremque fugit vero eligendi corporis ab itaque odio minus quo dolores nostrum debitis expedita dolore repudiandae nam praesentium veritatis saepe molestias, incidunt ea accusamus iure! Sit voluptates id minima beatae mollitia aperiam ab architecto ut suscipit! Possimus a iste recusandae nulla magni expedita rem molestias autem nam. Hic ab necessitatibus accusamus odio ex repellat tenetur quidem ipsa, distinctio molestias optio totam eveniet reiciendis maiores asperiores deleniti porro ut dignissimos ad quia perferendis cumque? Dignissimos, porro obcaecati delectus laborum reprehenderit quae hic cum sapiente iusto a nulla? Quas, omnis nam voluptatem possimus ratione voluptas eveniet rem expedita corporis optio quidem porro animi sapiente quaerat repudiandae nemo non! Voluptatum!', 'bg-image-1.jpg', '2021-04-05 17:38:43', 'Arta', 'Romance', 'Yes'),
-(4, 'Third Post', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias nisi atque quidem iure! Omnis excepturi itaque esse odio magni!', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores est ipsa dolores assumenda, iste quis, voluptatibus itaque iusto soluta explicabo, nihil ullam animi omnis odio vel. Quidem odit, mollitia ipsam similique earum vel quibusdam voluptas nostrum eius. Ipsam sapiente vitae asperiores voluptatibus culpa, esse commodi dicta voluptas officia tenetur ea quam error quo minus? Sit laudantium perferendis modi repellat accusamus amet vero et ex quasi, dicta recusandae fuga dignissimos dolores laborum illum ullam eligendi, ad veritatis neque. Saepe eum quod, eius non blanditiis nisi! Velit natus pariatur sequi alias. Quam repellat facilis doloremque fugit vero eligendi corporis ab itaque odio minus quo dolores nostrum debitis expedita dolore repudiandae nam praesentium veritatis saepe molestias, incidunt ea accusamus iure! Sit voluptates id minima beatae mollitia aperiam ab architecto ut suscipit! Possimus a iste recusandae nulla magni expedita rem molestias autem nam. Hic ab necessitatibus accusamus odio ex repellat tenetur quidem ipsa, distinctio molestias optio totam eveniet reiciendis maiores asperiores deleniti porro ut dignissimos ad quia perferendis cumque? Dignissimos, porro obcaecati delectus laborum reprehenderit quae hic cum sapiente iusto a nulla? Quas, omnis nam voluptatem possimus ratione voluptas eveniet rem expedita corporis optio quidem porro animi sapiente quaerat repudiandae nemo non! Voluptatum!', 'bg-image-2.jpg', '2021-04-05 17:38:43', 'Adonis', 'Bisnis', 'Yes'),
-(5, 'Second Post', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias nisi atque quidem iure! Omnis excepturi itaque esse odio magni!', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores est ipsa dolores assumenda, iste quis, voluptatibus itaque iusto soluta explicabo, nihil ullam animi omnis odio vel. Quidem odit, mollitia ipsam similique earum vel quibusdam voluptas nostrum eius. Ipsam sapiente vitae asperiores voluptatibus culpa, esse commodi dicta voluptas officia tenetur ea quam error quo minus? Sit laudantium perferendis modi repellat accusamus amet vero et ex quasi, dicta recusandae fuga dignissimos dolores laborum illum ullam eligendi, ad veritatis neque. Saepe eum quod, eius non blanditiis nisi! Velit natus pariatur sequi alias. Quam repellat facilis doloremque fugit vero eligendi corporis ab itaque odio minus quo dolores nostrum debitis expedita dolore repudiandae nam praesentium veritatis saepe molestias, incidunt ea accusamus iure! Sit voluptates id minima beatae mollitia aperiam ab architecto ut suscipit! Possimus a iste recusandae nulla magni expedita rem molestias autem nam. Hic ab necessitatibus accusamus odio ex repellat tenetur quidem ipsa, distinctio molestias optio totam eveniet reiciendis maiores asperiores deleniti porro ut dignissimos ad quia perferendis cumque? Dignissimos, porro obcaecati delectus laborum reprehenderit quae hic cum sapiente iusto a nulla? Quas, omnis nam voluptatem possimus ratione voluptas eveniet rem expedita corporis optio quidem porro animi sapiente quaerat repudiandae nemo non! Voluptatum!', 'bg-image-3.jpg', '2021-04-05 17:39:05', 'Arta', 'Romance', 'Yes'),
-(6, 'Third Post', 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus molestias nisi atque quidem iure! Omnis excepturi itaque esse odio magni!', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque maiores est ipsa dolores assumenda, iste quis, voluptatibus itaque iusto soluta explicabo, nihil ullam animi omnis odio vel. Quidem odit, mollitia ipsam similique earum vel quibusdam voluptas nostrum eius. Ipsam sapiente vitae asperiores voluptatibus culpa, esse commodi dicta voluptas officia tenetur ea quam error quo minus? Sit laudantium perferendis modi repellat accusamus amet vero et ex quasi, dicta recusandae fuga dignissimos dolores laborum illum ullam eligendi, ad veritatis neque. Saepe eum quod, eius non blanditiis nisi! Velit natus pariatur sequi alias. Quam repellat facilis doloremque fugit vero eligendi corporis ab itaque odio minus quo dolores nostrum debitis expedita dolore repudiandae nam praesentium veritatis saepe molestias, incidunt ea accusamus iure! Sit voluptates id minima beatae mollitia aperiam ab architecto ut suscipit! Possimus a iste recusandae nulla magni expedita rem molestias autem nam. Hic ab necessitatibus accusamus odio ex repellat tenetur quidem ipsa, distinctio molestias optio totam eveniet reiciendis maiores asperiores deleniti porro ut dignissimos ad quia perferendis cumque? Dignissimos, porro obcaecati delectus laborum reprehenderit quae hic cum sapiente iusto a nulla? Quas, omnis nam voluptatem possimus ratione voluptas eveniet rem expedita corporis optio quidem porro animi sapiente quaerat repudiandae nemo non! Voluptatum!', 'bg-image-4.jpg', '2021-04-05 17:39:05', 'Adonis', 'Bisnis', 'Yes'),
-(7, 'Crud Post 1', 'Test excerpt', 'Test body edit', 'Blog-bbmt-1555.jpg', '2021-04-05 08:11:38', 'Roby', 'Travel', 'Yes'),
-(11, 'Cinta Selalu Menemukan Jalanya Untuk Pulang', 'Akan selalu ada yang datang dan pergi, tugas kita hanya menjaga dan merelakan yang pergi.', '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur deleniti quia reprehenderit, eius beatae recusandae atque. Aut exercitationem consequatur delectus!</p>\r\n\r\n<h1>1. Part Satu</h1>\r\n\r\n<p><img alt=\"Sexy 1\" src=\"http://localhost/php/bbmtours-website-php/public/images/demo/New-blog-image-1715.jpg\" /></p>\r\n', 'New-blog-image-9378.jpg', '2021-04-05 09:13:34', 'roby', 'Travel', 'Yes');
 
 -- --------------------------------------------------------
 
@@ -120,10 +107,30 @@ CREATE TABLE `tbl_category` (
 --
 
 INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) VALUES
-(4, 'Pizza', 'Food_Category_790.jpg', 'Yes', 'Yes'),
-(5, 'Burger', 'Food_Category_344.jpg', 'Yes', 'Yes'),
-(6, 'MoMo', 'Food_Category_77.jpg', 'Yes', 'Yes'),
-(8, 'Quia est ipsum id id', 'Food_Category_929.jpg', 'No', 'Yes');
+(4, 'Yogyakarta', 'Food_Category_234.jpg', 'Yes', 'Yes'),
+(5, 'Bali', 'Food_Category_226.jpg', 'Yes', 'Yes'),
+(6, 'Lombok', 'Food_Category_853.jpg', 'Yes', 'Yes'),
+(8, 'NTT', 'Food_Category_889.jpg', 'No', 'Yes'),
+(9, 'Jakarta', 'Destination_Category_517.jpg', 'Yes', 'Yes');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_day`
+--
+
+CREATE TABLE `tbl_day` (
+  `id` int(11) NOT NULL,
+  `day` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_day`
+--
+
+INSERT INTO `tbl_day` (`id`, `day`) VALUES
+(1, '2 day'),
+(2, '3 day');
 
 -- --------------------------------------------------------
 
@@ -133,11 +140,11 @@ INSERT INTO `tbl_category` (`id`, `title`, `image_name`, `featured`, `active`) V
 
 CREATE TABLE `tbl_food` (
   `id` int(10) UNSIGNED NOT NULL,
+  `category_id` int(10) UNSIGNED NOT NULL,
   `title` varchar(100) NOT NULL,
   `description` text NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `image_name` varchar(255) NOT NULL,
-  `category_id` int(10) UNSIGNED NOT NULL,
   `featured` varchar(10) NOT NULL,
   `active` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -146,13 +153,37 @@ CREATE TABLE `tbl_food` (
 -- Dumping data for table `tbl_food`
 --
 
-INSERT INTO `tbl_food` (`id`, `title`, `description`, `price`, `image_name`, `category_id`, `featured`, `active`) VALUES
-(3, 'Dumplings Specials', 'Chicken Dumpling with herbs from Mountains', '5.00', 'Food-Name-3649.jpg', 6, 'Yes', 'Yes'),
-(4, 'Best Burger', 'Burger with Ham, Pineapple and lots of Cheese.', '4.00', 'Food-Name-6340.jpg', 5, 'Yes', 'Yes'),
-(5, 'Smoky BBQ Pizza', 'Best Firewood Pizza in Town.', '6.00', 'Food-Name-8298.jpg', 4, 'No', 'Yes'),
-(6, 'Sadeko Momo', 'Best Spicy Momo for Winter', '6.00', 'Food-Name-7387.jpg', 6, 'Yes', 'Yes'),
-(7, 'Mixed Pizza', 'Pizza with chicken, Ham, Buff, Mushroom and Vegetables', '10.00', 'Food-Name-7833.jpg', 4, 'Yes', 'Yes'),
-(8, 'Sed ipsum cillum in', 'Sed aut officiis qui', '52.00', '', 5, 'No', 'No');
+INSERT INTO `tbl_food` (`id`, `category_id`, `title`, `description`, `price`, `image_name`, `featured`, `active`) VALUES
+(3, 6, 'Besakih', 'Chicken Dumpling with herbs from Mountains', '5.00', 'Food-Name-3649.jpg', 'Yes', 'Yes'),
+(4, 5, 'Batur', 'Burger with Ham, Pineapple and lots of Cheese.', '4.00', 'Food-Name-6340.jpg', 'Yes', 'Yes'),
+(5, 4, 'Ubud', 'Best Firewood Pizza in Town.', '6.00', 'Food-Name-8298.jpg', 'No', 'Yes'),
+(6, 6, 'Sadeko Momo', 'Best Spicy Momo for Winter', '6.00', 'Food-Name-7387.jpg', 'Yes', 'Yes'),
+(7, 4, 'Mixed Pizza', 'Pizza with chicken, Ham, Buff, Mushroom and Vegetables', '10.00', 'Food-Name-7833.jpg', 'Yes', 'Yes'),
+(8, 5, 'Sed ipsum cillum in', 'Sed aut officiis qui', '52.00', '', 'No', 'No');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_itinarary`
+--
+
+CREATE TABLE `tbl_itinarary` (
+  `id` int(11) NOT NULL,
+  `destination_id` int(11) NOT NULL,
+  `day_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `image_name` varchar(255) NOT NULL,
+  `created_at` date NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_itinarary`
+--
+
+INSERT INTO `tbl_itinarary` (`id`, `destination_id`, `day_id`, `title`, `image_name`, `created_at`) VALUES
+(5, 5, 1, 'Keliling Bangli', 'Profile-User-5611.jpg', '2021-04-14'),
+(6, 6, 2, 'Keliling Lombok', 'Profile-User-5611.jpg', '2021-04-15'),
+(7, 5, 1, 'Keliling Karangasem', 'Profile-User-5611.jpg', '2021-04-23');
 
 -- --------------------------------------------------------
 
@@ -182,7 +213,8 @@ INSERT INTO `tbl_order` (`id`, `food`, `price`, `qty`, `total`, `order_date`, `s
 (1, 'Sadeko Momo', '6.000', 3, '18.000', '2020-11-30 03:49:48', 'Cancelled', 'Bradley Farrell', '+1 (576) 504-4657', 'zuhafiq@mailinator.com', 'Duis aliqua Qui lor'),
 (2, 'Best Burger', '4.000', 4, '16.000', '2020-11-30 03:52:43', 'Delivered', 'Kelly Dillard', '+1 (908) 914-3106', 'fexekihor@mailinator.com', 'Incidunt ipsum ad d'),
 (3, 'Mixed Pizza', '10.000', 2, '20.000', '2020-11-30 04:07:17', 'Delivered', 'Jana Bush', '+1 (562) 101-2028', 'tydujy@mailinator.com', 'Minima iure ducimus'),
-(4, 'Mixed Pizza', '10.000', 2, '20.000', '2021-04-05 22:45:59', 'On Delivery', 'I KADEK ROBY ADI PUTRA', '081756876562', 'bbmrobi3@gmail.com', 'denpasar\r\njl nangka selatan gg perkutut no 2 denpasar');
+(4, 'Mixed Pizza', '10.000', 2, '20.000', '2021-04-05 22:45:59', 'On Delivery', 'I KADEK ROBY ADI PUTRA', '081756876562', 'bbmrobi3@gmail.com', 'denpasar\r\njl nangka selatan gg perkutut no 2 denpasar'),
+(5, 'Mixed Pizza', '10.000', 2, '20.000', '2021-04-05 17:22:42', 'Ordered', 'I KADEK ROBY ADI PUTRA', '081756876562', 'bbmrobi3@gmail.com', 'denpasar\r\njl nangka selatan gg perkutut no 2 denpasar');
 
 -- --------------------------------------------------------
 
@@ -254,9 +286,21 @@ ALTER TABLE `tbl_category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_day`
+--
+ALTER TABLE `tbl_day`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_food`
 --
 ALTER TABLE `tbl_food`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl_itinarary`
+--
+ALTER TABLE `tbl_itinarary`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -291,7 +335,7 @@ ALTER TABLE `tbl_admin`
 -- AUTO_INCREMENT for table `tbl_blog`
 --
 ALTER TABLE `tbl_blog`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tbl_blog_category`
@@ -303,7 +347,13 @@ ALTER TABLE `tbl_blog_category`
 -- AUTO_INCREMENT for table `tbl_category`
 --
 ALTER TABLE `tbl_category`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `tbl_day`
+--
+ALTER TABLE `tbl_day`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tbl_food`
@@ -312,10 +362,16 @@ ALTER TABLE `tbl_food`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
+-- AUTO_INCREMENT for table `tbl_itinarary`
+--
+ALTER TABLE `tbl_itinarary`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tbl_user_role`
