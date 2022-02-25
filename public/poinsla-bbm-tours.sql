@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 24, 2022 at 04:45 PM
+-- Generation Time: Feb 25, 2022 at 12:53 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -173,17 +173,18 @@ CREATE TABLE `tbl_itinarary` (
   `day_id` int(11) NOT NULL,
   `title` varchar(255) NOT NULL,
   `image_name` varchar(255) NOT NULL,
-  `created_at` date NOT NULL DEFAULT current_timestamp()
+  `created_at` date NOT NULL DEFAULT current_timestamp(),
+  `price` decimal(10,3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `tbl_itinarary`
 --
 
-INSERT INTO `tbl_itinarary` (`id`, `destination_id`, `day_id`, `title`, `image_name`, `created_at`) VALUES
-(5, 5, 1, 'Keliling Bangli', 'Profile-User-5611.jpg', '2021-04-14'),
-(6, 6, 2, 'Keliling Lombok', 'Profile-User-5611.jpg', '2021-04-15'),
-(7, 5, 1, 'Keliling Karangasem', 'Profile-User-5611.jpg', '2021-04-23');
+INSERT INTO `tbl_itinarary` (`id`, `destination_id`, `day_id`, `title`, `image_name`, `created_at`, `price`) VALUES
+(5, 5, 1, 'Keliling Bangli', 'https://i.picsum.photos/id/123/2000/1000.jpg?hmac=-vB3RB-rl7VLL6yY5GKrXiLqclCunWwq1YZvFJIYg8Q', '2021-04-14', '342.000'),
+(6, 6, 2, 'Keliling Lombok', 'https://i.picsum.photos/id/123/2000/1000.jpg?hmac=-vB3RB-rl7VLL6yY5GKrXiLqclCunWwq1YZvFJIYg8Q', '2021-04-15', '786.000'),
+(7, 5, 1, 'Keliling Karangasem', 'https://i.picsum.photos/id/123/2000/1000.jpg?hmac=-vB3RB-rl7VLL6yY5GKrXiLqclCunWwq1YZvFJIYg8Q', '2021-04-23', '442.000');
 
 -- --------------------------------------------------------
 
