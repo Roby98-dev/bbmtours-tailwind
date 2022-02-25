@@ -4,7 +4,7 @@ session_start();
 
 
 //Create Constants to Store Non Repeating Values
-define('SITEURL', 'http://localhost/bbmtours/public/');
+define('SITEURL', 'http://localhost/php/bbmtours-website-php/public/');
 define('LOCALHOST', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');

@@ -95,7 +95,7 @@ include_once('login-check.php');
                     <div class="my-2 hover:bg-indigo-500 md:flex justify-center lg:justify-start cursor-pointer rounded mx-2 hover:text-gray-100">
                         <div class="flex items-center px-1">
                             <i class="bx bx-map px-1 md:text-2xl lg:text-lg"></i>
-                            <p class="md:hidden lg:block lg:text-lg">Categorys</p>
+                            <p class="md:hidden lg:block lg:text-lg">Destination</p>
                         </div>
                     </div>
                 </a>
@@ -103,7 +103,7 @@ include_once('login-check.php');
                     <div class="my-2 hover:bg-indigo-500 md:flex justify-center lg:justify-start cursor-pointer rounded mx-2 hover:text-gray-100">
                         <div class="flex items-center px-1">
                             <i class="bx bx-home px-1 md:text-2xl lg:text-lg"></i>
-                            <p class="md:hidden lg:block lg:text-lg">Itinarary</p>
+                            <p class="md:hidden lg:block lg:text-lg">Objects</p>
                         </div>
                     </div>
                 </a>
@@ -112,7 +112,7 @@ include_once('login-check.php');
                         <div class="my-2 hover:bg-indigo-500 md:flex justify-center lg:justify-start cursor-pointer rounded mx-2 hover:text-gray-100">
                             <div class="flex items-center px-1">
                                 <i class="bx bx-money px-1 md:text-2xl lg:text-lg"> </i>
-                                <p class="md:hidden lg:block lg:text-lg">Order</p>
+                                <p class="md:hidden lg:block lg:text-lg">Itinarary</p>
                             </div>
                         </div>
                     </a>

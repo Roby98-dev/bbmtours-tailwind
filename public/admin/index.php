@@ -33,7 +33,7 @@
                     ?>
                     <div class="text-center py-4 hover:font-bold transition duration-300 text-indigo-500">
                         <h1><?= $count; ?></h1>
-                        <p>Categories</p>
+                        <p>Destination</p>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
 
                     <div class="text-center py-4 hover:font-bold transition duration-300 text-indigo-500">
                         <h1><?= $count2; ?></h1>
-                        <p>Itinerary</p>
+                        <p>Objects</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +78,7 @@
 
                     <div class="text-center py-4 hover:font-bold transition duration-300 text-indigo-500">
                         <h1><?= $count3; ?></h1>
-                        <p>Orders</p>
+                        <p>Itinarary</p>
                     </div>
                 </div>
             </div>

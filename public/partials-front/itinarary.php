@@ -50,7 +50,7 @@
                             <?php
                             } else {
                             ?>
-                                <div style="background-image: url(<?= SITEURL; ?>images/profile/<?= $image_name; ?>);" class="h-80 bg-cover bg-center bg-no-repeat rounded-lg">
+                                <div style="background-image: url(<?= $image_name; ?>);" class="h-80 bg-cover bg-center bg-no-repeat rounded-lg">
                                     <div class="bg-black rounded-lg h-full bg-opacity-50 flex justify-center items-center">
                                         <div class="text-gray-100">
                                             <h4 class="text-xl font-semibold tracking-wider"><?= $title; ?></h4>
