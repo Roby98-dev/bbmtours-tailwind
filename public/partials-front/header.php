@@ -11,7 +11,6 @@
     <title>BBM Tours</title>
 
     <!-- Link our CSS file -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/vendor/swiperjs/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/vendor/boxicons/css/boxicons.css">
     <link rel="stylesheet" href="<?= SITEURL; ?>assets/css/styles.css">
