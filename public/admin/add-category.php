@@ -2,7 +2,7 @@
 
 <div class="bg-gray-200 md:ml-16 lg:ml-60 px-2 py-10">
     <div class="py-5">
-        <h1 class="text-center text-green-500 font-semibold text-4xl uppercase">Add Category</h1>
+        <h1 class="text-center text-green-500 font-semibold text-4xl uppercase">Add Destination</h1>
         <div class="flex justify-center">
             <div class="h-1 w-24 mb-3 bg-green-500"></div>
         </div>
@@ -27,7 +27,7 @@
                 <tr>
                     <td>Title: </td>
                     <td>
-                        <input type="text" name="title" placeholder="Category Title" class="px-1 py-2 rounded-lg">
+                        <input type="text" name="title" placeholder="Destination Title" class="px-1 py-2 rounded-lg">
                     </td>
                 </tr>
 

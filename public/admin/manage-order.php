@@ -37,7 +37,7 @@
 
     ?>
 
-    <a href="<?php echo SITEURL; ?>admin/add-food.php" class="bg-blue-500 px-4 font-semibold rounded py-1 text-gray-200"><i class="bx bx-plus"></i>Itinarary</a>
+    <a href="<?php echo SITEURL; ?>admin/add-itinarary.php" class="bg-blue-500 px-4 font-semibold rounded py-1 text-gray-200"><i class="bx bx-plus"></i>Itinarary</a>
 
     <div class="py-5 overflow-x-scroll">
         <table id="category-destination" class="stripe hover">
@@ -55,7 +55,7 @@
 
             <tbody>
                 <?php
-                $sql = "SELECT tbl_itinarary.id, tbl_itinarary.image_name, tbl_itinarary.title AS iti_title, tbl_category.title AS cata_title, tbl_day.day, tbl_itinarary.price
+                $sql = "SELECT tbl_itinarary.id, tbl_itinarary.image_name, tbl_itinarary.title AS iti_title, tbl_category.title AS cata_title, tbl_day.day, tbl_itinarary.price, tbl_itinarary.featured, tbl_itinarary.active
                 FROM (( tbl_itinarary 
                 INNER JOIN tbl_category 
                 ON tbl_itinarary.destination_id = tbl_category.id ) 
