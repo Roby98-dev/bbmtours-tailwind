@@ -14,30 +14,30 @@
     </div>
   </div>
 
-  <div class="md:flex justify-center hidden">
+  <div class="md:flex justify-center">
     <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center text-indigo-600">
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel2.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel2_JPU2jvsUa.png" alt="" class="w-32 mx-auto">
         <p>A Whole Experience in One Package</p>
       </div>
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel2.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel1_amk81sxOC.png" alt="" class="w-32 mx-auto">
         <p>Unexpected Journey</p>
       </div>
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel3.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel3_RBz3e3rEvh.png" alt="" class="w-32 mx-auto">
         <p>Comfort and Private</p>
       </div>
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel4.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel4_f6Z9Uo7bG.png" alt="" class="w-32 mx-auto">
         <p>Flexible Itinerary</p>
       </div>
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel5.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel5_B9Xp7TSfS.png" alt="" class="w-32 mx-auto">
         <p>Hospitality & Quality</p>
       </div>
       <div class="pt-3">
-        <img src="../images/about/icon_whytravel6.png" alt="" class="w-32 mx-auto">
+        <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel6_g6hzD_GSh.png" alt="" class="w-32 mx-auto">
         <p>Personalise Service</p>
       </div>
     </div>

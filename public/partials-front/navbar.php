@@ -55,7 +55,7 @@
         </div>
 
         <div class="flex justify-center">
-            <div class="md:hidden shadow z-10 flex justify-between fixed bottom-0 bg-gray-200 mb-2 rounded-lg px-5">
+            <div class="md:hidden shadow z-10 flex justify-between fixed bottom-0 bg-gray-200 rounded-t-lg px-5">
                 <div class="py-1 mx-1 w-14">
                     <a href="<?= SITEURL; ?>homepage.php" class="text-center">
                         <div>

@@ -1,5 +1,5 @@
 <section class="px-2 py-10">
-    <div class="flex justify-between max-w-6xl mx-auto">
+    <div class="flex justify-between max-w-6xl mx-auto pr-2">
         <div class="p-2">
             <div>
                 <div class="h-full w-full md:p-2 flex text-left">
@@ -57,7 +57,7 @@
                                         <div class="text-gray-100 px-5">
                                             <h4 class="text-xl font-semibold tracking-wider"><?= $title; ?></h4>
                                             <h4><?= $day; ?> in <?= $category; ?></h4>
-                                            <h4>Start from $<?= $price; ?></h4>
+                                            <h4>Start from <span class="font-bold">$<?= $price; ?></span></h4>
                                         </div>
                                     </div>
                                 </div>
@@ -69,7 +69,7 @@
                                         <div class="text-gray-100 px-5">
                                             <h4 class="text-xl font-semibold tracking-wider"><?= $title; ?></h4>
                                             <h4><?= $day; ?> in <?= $category; ?></h4>
-                                            <h4>Start from $<?= $price; ?></h4>
+                                            <h4>Start from <span class="font-bold">$<?= $price; ?></h4>
                                         </div>
                                     </div>
                                 </div>
