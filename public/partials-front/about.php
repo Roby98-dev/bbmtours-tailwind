@@ -1,4 +1,4 @@
-<section class="px-2 py-10">
+<section id="about" class="px-2 py-10">
   <div class="max-w-6xl mx-auto">
     <div class="p-2">
       <div>

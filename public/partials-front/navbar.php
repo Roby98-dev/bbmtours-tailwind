@@ -1,6 +1,6 @@
 <header>
-    <nav class="w-full px-2 shadow border-gray-400">
-        <div class="text-center text-gray-500 font-semibold items-center bg-gray-500 py-2 flex justify-center">
+    <nav class="w-full shadow border-gray-400">
+        <div class="text-center text-gray-500 font-semibold items-center bg-gray-200 py-2 flex justify-center">
             <div class="items-center flex">
                 <!-- <i class="bx mx-2 bxl-whatsapp"></i> -->
                 <a href="">+62812-3821-1110</a>
@@ -18,8 +18,8 @@
             </div>
             <div class="text-gray-600 font-semibold text-center uppercase text-lg">
                 <a href="<?= SITEURL; ?>homepage.php" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Home</a>
-                <a href="explore.html" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Explore</a>
-                <a href="" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">About</a>
+                <a href="<?= SITEURL; ?>homepage.php" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Explore</a>
+                <a href="#about" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">About</a>
                 <!-- <a href="" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Pricing</a> -->
             </div>
             <div class="text-lg flex items-center">
@@ -79,7 +79,7 @@
                 </div>
 
                 <div class="py-1 mx-1 w-14 flex items-center justify-center">
-                    <a href="<?= SITEURL; ?>homepage.php" class="text-center">
+                    <a href="<?= SITEURL; ?>admin/" class="text-center">
                         <div class="px-1">
                             <svg width="48px" height="48px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="48" height="48" fill="white" fill-opacity="0.01" />
@@ -92,7 +92,7 @@
                 </div>
 
                 <div class="py-1 mx-1 w-14">
-                    <a href="<?= SITEURL; ?>homepage.php" class="text-center">
+                    <a href="#about" class="text-center">
                         <div>
                             <i class="bx bx-calendar font-semibold text-xl hover:text-blue-400"></i>
                         </div>
