@@ -1,13 +1,11 @@
 <header>
     <nav class="w-full shadow border-gray-400">
-        <div class="text-center text-gray-500 font-semibold items-center bg-gray-200 py-2 flex justify-center">
+        <div class="text-center text-sm text-gray-500 font-semibold items-center bg-blue-200 py-2 flex justify-center">
             <div class="items-center flex">
-                <!-- <i class="bx mx-2 bxl-whatsapp"></i> -->
-                <a href="">+62812-3821-1110</a>
+                <a href="https://wa.me/+6281238211110" class="mx-2"><i class="bx bxl-whatsapp"></i>+62812-3821-1110</a>
             </div>
             <div>
-                <i class="bx mx-2 bxl-envelope"></i>
-                <a href="">info@bbmtours.com</a>
+                <a href="#" class="mx-2"><i class="bx bx-envelope"></i>info@bbmtours.com</a>
             </div>
         </div>
         <div class="hidden md:flex justify-between max-w-6xl py-2 mx-auto items-center">
@@ -16,7 +14,7 @@
                     <img src="<?= SITEURL; ?>images/bbm-logo.png" alt="Logo BBM Tours" class="w-10 h-8">
                 </a>
             </div>
-            <div class="text-gray-600 font-semibold text-center uppercase text-lg">
+            <div class="text-gray-600 font-semibold text-center tracking-wider hover:text-indigo-500 uppercase text-lg">
                 <a href="<?= SITEURL; ?>homepage.php" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Home</a>
                 <a href="<?= SITEURL; ?>homepage.php" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Explore</a>
                 <a href="#about" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">About</a>

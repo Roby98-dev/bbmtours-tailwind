@@ -2,6 +2,7 @@
 <?php include_once('partials-front/navbar.php'); ?>
 <?php include_once('partials-front/hero.php'); ?>
 <?php include_once('partials-front/itinarary.php'); ?>
+<?php include_once('partials-front/dspl-ytb.php'); ?>
 <?php include_once('partials-front/about.php'); ?>
 <?php //include_once('partials-front/destination.php'); 
 ?>

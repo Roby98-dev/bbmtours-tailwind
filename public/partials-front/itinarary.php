@@ -1,5 +1,5 @@
 <section class="px-2 py-10">
-    <div class="flex justify-between max-w-6xl mx-auto pr-2">
+    <div class="flex justify-between max-w-6xl mx-auto pr-4">
         <div class="p-2">
             <div>
                 <div class="h-full w-full md:p-2 flex text-left">

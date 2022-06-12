@@ -3,22 +3,23 @@
     <div class="p-2">
       <div>
         <div class="h-full w-full md:p-2 text-center">
-          <h1 class="text-gray-600 text-2xl tracking-wider md:text-4xl font-bold">Why Experience with BBM Tours</h1>
+          <h1 class="text-gray-600 text-2xl tracking-wider md:text-4xl font-bold">Why Experience with BBM Tours?</h1>
         </div>
       </div>
       <div>
         <div class="h-full w-full md:p-2 text-center">
-          <p class="text-gray-600 md:text-md tracking-wider">BBM Tours gives you an unexpected journey with a whole experience in the destination. Our priorities are delivering our quality warm hospitality, services, experiences, and comfort to bring out the best from the destination.</p>
+          <p class="text-gray-600 md:text-md tracking-wider">BBM Tours gives you an unexpected journey with a whole experience in the destination. <br> Our priorities are delivering our quality warm hospitality, services, experiences, and comfort to bring out the best from the destination.</p>
         </div>
       </div>
     </div>
   </div>
 
   <div class="md:flex justify-center">
-    <div class="max-w-6xl w-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 text-center text-indigo-600">
+    <div class="max-w-6xl w-full mx-auto grid grid-cols-1 tracking-wide md:grid-cols-2 lg:grid-cols-3 text-center text-indigo-600">
       <div class="pt-5">
         <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel2_JPU2jvsUa.png" alt="" class="w-32 mx-auto">
-        <p class="font-bold mt-5">A Whole Experience in One Package</p>
+        <p class="font-bold mt-5">A Whole Experience <br> in One Package
+        </p>
       </div>
       <div class="pt-5">
         <img src="https://ik.imagekit.io/poinsla/about-page/icon_whytravel1_amk81sxOC.png" alt="" class="w-32 mx-auto">
