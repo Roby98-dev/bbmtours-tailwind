@@ -120,7 +120,7 @@
                                     <div class="text-gray-100">
                                         <h4 class="text-xl font-semibold tracking-wider"><?= $title; ?></h4>
                                         <h4><?= $day; ?> in <?= $category; ?></h4>
-                                        <h4>Start from<span class="font-bold">$<?= $price; ?></span></h4>
+                                        <h4>Start from <span class="font-bold">$<?= $price; ?></span></h4>
                                     </div>
                                 </div>
                             </a>
@@ -133,7 +133,7 @@
                                         <div class="text-gray-100">
                                             <h4 class="text-xl font-semibold tracking-wider"><?= $title; ?></h4>
                                             <h4><?= $day; ?> in <?= $category; ?></h4>
-                                            <h4>Start from $<span class="font-bold">$<?= $price; ?></span></h4>
+                                            <h4>Start from <span class="font-bold">$<?= $price; ?></span></h4>
                                         </div>
                                     </div>
                                 </div>

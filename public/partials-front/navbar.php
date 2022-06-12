@@ -94,10 +94,10 @@
                 <div class="py-1 mx-1 w-14">
                     <a href="#about" class="text-center">
                         <div>
-                            <i class="bx bx-calendar font-semibold text-xl hover:text-blue-400"></i>
+                            <i class="bx bx-user font-semibold text-xl hover:text-blue-400"></i>
                         </div>
                         <div>
-                            <p class="text-sm">Event</p>
+                            <p class="text-sm">About</p>
                         </div>
                     </a>
                 </div>
