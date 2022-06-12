@@ -1,6 +1,6 @@
 <?php include('partials-front/header.php'); ?>
 
-<div class="h-screen bg-indigo-600 bg-cover bg-center bg-no-repeat" style="background-image: url(https://i.picsum.photos/id/107/1000/1000.jpg?hmac=6o_Clm3rOr3AWQv0JEnaSTEfdJ_Usr0C2z0Z_IRSREk);">
+<div class="h-screen bg-indigo-600 bg-cover bg-center bg-no-repeat" style="background-image: url(https://ik.imagekit.io/poinsla/bbmtours/alexa-west-OOTEpsO2eV0-unsplash_OhlJLqQDV.jpg);">
     <div class="md:hidden py-5 h-screen relative justify-center">
         <div class="flex justify-center mb-10 w-full overflow-hidden px-8">
             <h1 class="text-center w-full py-2 text-indigo-500 font-semibold rounded-lg tracking-wider">BBM Tours</h1>
