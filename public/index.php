@@ -1,9 +1,9 @@
 <?php include('partials-front/header.php'); ?>
 
-<div class="h-screen bg-indigo-600 bg-cover bg-center bg-no-repeat" style="background-image: url(https://ik.imagekit.io/poinsla/bbmtours/alexa-west-OOTEpsO2eV0-unsplash_OhlJLqQDV.jpg);">
+<div class="h-screen bg-indigo-400 bg-cover bg-center bg-no-repeat" style="background-image: url(https://ik.imagekit.io/poinsla/bbmtours/alexa-west-OOTEpsO2eV0-unsplash_OhlJLqQDV.jpg);">
     <div class="md:hidden py-5 h-screen relative justify-center">
         <div class="flex justify-center mb-10 w-full overflow-hidden px-8">
-            <h1 class="text-center w-full py-2 text-indigo-500 font-semibold rounded-lg tracking-wider">BBM Tours</h1>
+            <h1 class="text-center w-full py-2 text-indigo-100 font-semibold rounded-lg tracking-wider">BBM Tours</h1>
         </div>
         <div class="bottom-20 absolute mb-10 w-full overflow-hidden px-8">
             <h1 class="text-gray-100 font-semibold text-3xl mb-4">The <span class="text-green-400">best travel</span> in the world</h1>
