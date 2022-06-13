@@ -17,7 +17,7 @@
                 </div>
                 <div class="max-w-3xl mx-auto py-20">
                     <div class="md:flex items-center pb-8">
-                        <div class="px-4 w-96 mb-5">
+                        <div class="px-4 w-40 max-w-sm mb-5">
                             <img src="https://www.travellinotour.com/assets/icon/img_vision.png" alt="">
                         </div>
                         <div>
@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="md:flex items-center">
-                        <div class="px-4 w-96 mb-5">
+                        <div class="px-4 w-40 max-w-sm mb-5">
                             <img src="https://www.travellinotour.com/assets/icon/img_mission.png" alt="">
                         </div>
                         <div>
