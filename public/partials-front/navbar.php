@@ -17,7 +17,7 @@
             <div class="text-gray-600 font-semibold text-center tracking-wider uppercase text-lg">
                 <a href="<?= SITEURL; ?>homepage.php" class="mx-1 px-2 py-1 hover:text-indigo-500 hover:bg-gray-200 rounded">Home</a>
                 <a href="<?= SITEURL; ?>packages.php" class="mx-1 px-2 py-1 hover:text-indigo-500 hover:bg-gray-200 rounded">Explore</a>
-                <a href="#about" class="mx-1 px-2 py-1 hover:text-indigo-500 hover:bg-gray-200 rounded">About</a>
+                <a href="<?= SITEURL; ?>about-page.php" class="mx-1 px-2 py-1 hover:text-indigo-500 hover:bg-gray-200 rounded">About</a>
                 <!-- <a href="" class="mx-1 px-2 py-1 hover:bg-gray-200 rounded">Pricing</a> -->
             </div>
             <div class="text-lg flex items-center">
@@ -90,7 +90,7 @@
                 </div>
 
                 <div class="py-1 mx-1 w-14">
-                    <a href="#about" class="text-center">
+                    <a href="<?= SITEURL; ?>about-page.php" class="text-center">
                         <div>
                             <i class="bx bx-user font-semibold text-xl hover:text-blue-400"></i>
                         </div>

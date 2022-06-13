@@ -2,27 +2,18 @@
 <?php include_once('partials-front/navbar.php'); ?>
 
 <section class="px-2 py-10">
-    <div class="flex justify-between max-w-6xl mx-auto pr-4">
+    <div class="max-w-6xl mx-auto">
         <div class="p-2">
             <div>
-                <div class="h-full w-full md:p-2 flex text-left">
-                    <h1 class="text-gray-600 text-2xl tracking-wider md:text-4xl font-bold">Tour Packages</h1>
+                <div class="h-full w-full md:p-2 text-center">
+                    <h1 class="text-gray-600 text-2xl tracking-wider md:text-4xl font-bold">All Tour Packages</h1>
                 </div>
             </div>
             <div>
-                <div class="h-full w-full md:p-2 flex items-center">
+                <div class="h-full w-full md:p-2 text-center">
                     <p class="text-gray-600 md:text-md tracking-wider">Choose the package according to your wishes</p>
                 </div>
             </div>
-        </div>
-        <div class="flex items-center">
-            <p class="text-center">
-                <a href="#">
-                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M12,23 C5.92486775,23 1,18.0751322 1,12 C1,5.92486775 5.92486775,1 12,1 C18.0751322,1 23,5.92486775 23,12 C23,18.0751322 18.0751322,23 12,23 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M9.29289322,8.70710678 L10.7071068,7.29289322 L15.4142136,12 L10.7071068,16.7071068 L9.29289322,15.2928932 L12.5857864,12 L9.29289322,8.70710678 Z" />
-                    </svg>
-                </a>
-            </p>
         </div>
     </div>
 
@@ -91,3 +82,5 @@
     </div>
 
 </section>
+
+<?php include('partials-front/footer.php'); ?>
