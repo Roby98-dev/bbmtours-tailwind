@@ -1,5 +1,5 @@
 <header>
-    <div class="md:h-screen h-96 bg-indigo-600 bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url(./images/pexels-mikhail-nilov-6965007.jpg);">
+    <div class="md:h-screen h-96 bg-indigo-600 bg-cover bg-center bg-no-repeat" style="background-image: url(./images/pexels-mikhail-nilov-6965007.jpg);">
         <div class="h-full rounded-md bg-gradient-to-t from-black w-full p-2 flex justify-center items-center">
             <div>
                 <h1 class="text-center tracking-wider text-indigo-100 text-3xl uppercase px-14 md:text-5xl mx-auto font-bold py-10">Plan your trip with BBM Tours</h1>

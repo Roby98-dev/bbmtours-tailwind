@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <a href="<?= SITEURL; ?>admin/add-blog.php" class="bg-blue-500 rounded px-4 py-2 text-gray-100">Add Blog</a>
+    <a href="<?= SITEURL; ?>admin/add-itinarary.php" class="bg-blue-500 rounded px-4 py-2 text-gray-100">Add Blog</a>
 
     <?php
     if (isset($_SESSION['add'])) {
