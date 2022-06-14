@@ -32,7 +32,7 @@
             INNER JOIN tbl_category 
             ON tbl_itinarary.destination_id = tbl_category.id ) 
             INNER JOIN tbl_day 
-            ON tbl_itinarary.day_id = tbl_day.id) ORDER BY tbl_itinarary.id DESC LIMIT 4";
+            ON tbl_itinarary.day_id = tbl_day.id) ORDER BY tbl_itinarary.id DESC LIMIT 6";
 
             $res2 = mysqli_query($conn, $sql2);
             $count2 = mysqli_num_rows($res2);
